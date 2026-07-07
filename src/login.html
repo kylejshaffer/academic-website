@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Your Name</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container auth-shell">
+      <section class="auth-card">
+        <p class="eyebrow">Restricted access</p>
+        <h1>Sign in to view the site</h1>
+        <p class="lead">
+          Use the shared username and password to access the academic profile, publications, and CV.
+        </p>
+
+        <form id="login-form" class="auth-form">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" required />
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" required />
+
+          <button class="button primary" type="submit">Enter site</button>
+        </form>
+
+        <p id="login-message" class="auth-message" role="status"></p>
+        <p class="small-note">Current access: username <strong>scholar</strong>, password <strong>research2026</strong></p>
+      </section>
+    </main>
+
+    <script src="auth.js"></script>
+  </body>
+</html>
